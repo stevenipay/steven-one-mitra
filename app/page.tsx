@@ -65,14 +65,14 @@ export default function Home() {
 
   // Data 8 Foto Lengkap (Termasuk sosialisasi-8.jpg)
   const photos = [
-    { id: 1, src: '/sosialisasi-1.jpg', title: 'Perizinan Desa dan RT/RW' },
-    { id: 2, src: '/sosialisasi-2.jpg', title: 'Pendataan Warga' },
-    { id: 3, src: '/sosialisasi-3.jpg', title: 'Edukasi JKN' },
-    { id: 4, src: '/sosialisasi-4.jpg', title: 'Koordinasi Tokoh Masyarakat' },
-    { id: 5, src: '/sosialisasi-5.jpg', title: 'Validasi Data' },
-    { id: 6, src: '/sosialisasi-6.jpg', title: 'Kemitraan Strategis' },
-    { id: 7, src: '/sosialisasi-7.jpg', title: 'Akuisisi Peserta' },
-    { id: 8, src: '/sosialisasi-8.jpg', title: 'Akuisisi Pendataan' },
+    { id: 1, src: '/sosialisasi-1.jpg', title: 'Perizinan Desa dan RT/RW', date: '15 Oktober 2025' },
+    { id: 2, src: '/sosialisasi-2.jpg', title: 'Pendataan Warga Kp.Lengah Sari', date: '10 September 2025' },
+    { id: 3, src: '/sosialisasi-3.jpg', title: 'Edukasi Mobile JKN', date: '16 Juli 2025' },
+    { id: 4, src: '/sosialisasi-4.jpg', title: 'Sosialisasi Acara Ibu-ibu Arisan', date: '7 September 2025' },
+    { id: 5, src: '/sosialisasi-5.jpg', title: 'Pengecekan & Edukasi Warga Kampung Kobak', date: '6 September 2025' },
+    { id: 6, src: '/sosialisasi-6.jpg', title: 'Pengecekan & Edukasi Masyarakat Pantai HarapanJaya', date: '21 November 2025' },
+    { id: 7, src: '/sosialisasi-7.jpg', title: 'Pengecekan & Edukasi Masyarakat Tambun Selatan', date: '22 November 2025' },
+    { id: 8, src: '/sosialisasi-8.jpg', title: 'Pengecekan & Edukasi Masyarakat Kali Jaya', date: '2 Desember 2025' },
   ]
 
   return (
@@ -162,7 +162,7 @@ export default function Home() {
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
-                  <p className="text-white text-xs font-bold uppercase tracking-widest mb-1">Januari 2026</p>
+                  <p className="text-white text-xs font-bold uppercase tracking-widest mb-1">{photo.date}</p>
                   <p className="text-white font-bold">{photo.title}</p>
                 </div>
               </div>
@@ -183,7 +183,7 @@ export default function Home() {
               <Mail className="w-5 h-5 text-blue-600" /> stevenone28@yahoo.co.id
             </div>
           </div>
-          <p className="mt-16 text-slate-400 text-xs tracking-widest uppercase">© 2026 Steven One - Strategic Partnership</p>
+          <p className="mt-16 text-slate-400 text-xs tracking-widest uppercase">© 2025 Steven One - Strategic Partnership</p>
         </div>
       </footer>
     </div>
