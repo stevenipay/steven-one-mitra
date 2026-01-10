@@ -72,7 +72,7 @@ export default function Home() {
     { id: 5, src: '/sosialisasi-5.jpg', title: 'Pengecekan & Edukasi Warga Kampung Kobak', date: '6 September 2025' },
     { id: 6, src: '/sosialisasi-6.jpg', title: 'Pengecekan & Edukasi Masyarakat Pantai HarapanJaya', date: '21 November 2025' },
     { id: 7, src: '/sosialisasi-7.jpg', title: 'Pengecekan & Edukasi Masyarakat Tambun Selatan', date: '22 November 2025' },
-    { id: 8, src: '/sosialisasi-8.jpg', title: 'Pengecekan & Edukasi Masyarakat KaliJaya', date: '2 Desember 2025' },
+    { id: 8, src: '/sosialisasi-8.jpg', title: 'Pengecekan & Edukasi Masyarakat Serang', date: '2 Desember 2025' },
   ]
 
   return (
