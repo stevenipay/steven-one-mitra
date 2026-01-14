@@ -17,6 +17,9 @@ import {
 import { DarkModeToggle } from './components/DarkModeToggle'
 import { ThemeProvider } from './components/ThemeContext'
 import { FAQ } from './components/FAQ'
+import { WhyChooseUs } from './components/WhyChooseUs'
+import { ConsultantProfile } from './components/ConsultantProfile'
+import { FinalCTA } from './components/FinalCTA'
 
 // Komponen Counter yang diperbaiki agar tidak macet di angka 0
 const Counter = ({ target, label, suffix }: { target: number, label: string, suffix: string }) => {
@@ -74,12 +77,12 @@ export default function Home() {
     { id: 2, src: '/sosialisasi-2.jpg', title: 'Pendataan Warga Kampung Lengah Sari', date: '10 September 2025' },
     { id: 3, src: '/sosialisasi-3.jpg', title: 'Edukasi Mobile JKN', date: '16 Juli 2025' },
     { id: 4, src: '/sosialisasi-4.jpg', title: 'Sosialisasi Acara Ibu-ibu Arisan', date: '7 September 2025' },
-    { id: 5, src: '/sosialisasi-5.jpg', title: 'Pengecekan & Edukasi Warga Kampung Cijingga', date: '11 Januari 2026' },
-    { id: 6, src: '/sosialisasi-6.jpg', title: 'Pengecekan & Edukasi Masyarakat Pantai HarapanJaya', date: '21 November 2025' },
-    { id: 7, src: '/sosialisasi-7.jpg', title: 'Pengecekan & Edukasi Masyarakat Tambun Selatan', date: '22 November 2025' },
-    { id: 8, src: '/sosialisasi-8.jpg', title: 'Pengecekan & Edukasi Masyarakat Serang', date: '10 Januari 2026' },
-    { id: 9, src: '/horizontal-1.jpg', title: 'Dokumentasi Pendataan Warga Cabang Bungin', date: '10 September 2025' },
-    { id: 10, src: '/horizontal-2.jpg', title: 'Dokumentasi Pendataan Warga Tambun Selatan', date: '11 Desember 2025' },
+    { id: 5, src: '/sosialisasi-5.jpg', title: 'Sosialisasi & Edukasi Warga Kampung Cijingga', date: '11 Januari 2026' },
+    { id: 6, src: '/sosialisasi-6.jpg', title: 'Sosialisasi & Edukasi Masyarakat Pantai HarapanJaya', date: '21 November 2025' },
+    { id: 7, src: '/sosialisasi-7.jpg', title: 'Sosialisasi & Edukasi Masyarakat Tambun Selatan', date: '22 November 2025' },
+    { id: 8, src: '/sosialisasi-8.jpg', title: 'Sosialisasi & Edukasi Masyarakat Serang', date: '10 Januari 2026' },
+    { id: 9, src: '/horizontal-1.jpg', title: 'Pendataan Warga Cabang Bungin', date: '10 September 2025' },
+    { id: 10, src: '/horizontal-2.jpg', title: 'Pendataan Warga Tambun Selatan', date: '11 Desember 2025' },
     { id: 11, src: '/horizontal-3.jpg', title: 'Pendataan Warga Kampung Lengah Sari', date: '10 September 2025' },  ]
 
   return (
@@ -90,7 +93,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="text-2xl font-black tracking-tighter text-[#001E3C] dark:text-white">STEVEN ONE</div>
           <div className="hidden md:flex items-center space-x-8">
-            {['home', 'layanan', 'galeri', 'faq', 'kontak'].map((item) => (
+            {['home', 'layanan', 'galeri', 'faq', 'profil', 'kontak'].map((item) => (
               <button 
                 key={item}
                 onClick={() => scrollToSection(item)}
@@ -200,6 +203,15 @@ export default function Home() {
 
       {/* FAQ Section */}
       <FAQ />
+
+      {/* Why Choose Us Section */}
+      <WhyChooseUs />
+
+      {/* Consultant Profile Section */}
+      <ConsultantProfile />
+
+      {/* Final CTA Section */}
+      <FinalCTA />
 
       {/* Footer */}
       <footer id="kontak" className="py-20 bg-slate-200 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700">
