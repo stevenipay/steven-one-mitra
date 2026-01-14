@@ -14,11 +14,9 @@ import {
   CheckCircle2
 } from 'lucide-react'
 
-const DarkModeToggle = dynamic(() => import('./components/DarkModeToggle').then(mod => ({ default: mod.DarkModeToggle })), {
-  ssr: false,
-  loading: () => <div className="w-14 h-8 bg-slate-200 rounded-full"></div>
-})
+import { DarkModeToggle } from './components/DarkModeToggle'
 import { ThemeProvider } from './components/ThemeContext'
+import { FAQ } from './components/FAQ'
 
 // Komponen Counter yang diperbaiki agar tidak macet di angka 0
 const Counter = ({ target, label, suffix }: { target: number, label: string, suffix: string }) => {
@@ -82,7 +80,7 @@ export default function Home() {
     { id: 8, src: '/sosialisasi-8.jpg', title: 'Pengecekan & Edukasi Masyarakat Serang', date: '10 Januari 2026' },
     { id: 9, src: '/horizontal-1.jpg', title: 'Dokumentasi Pendataan Warga Cabang Bungin', date: '10 September 2025' },
     { id: 10, src: '/horizontal-2.jpg', title: 'Dokumentasi Pendataan Warga Tambun Selatan', date: '11 Desember 2025' },
-    { id: 11, src: '/horizontal-3.jpg', title: 'Dokumentasi Tambahan 3', date: '3 Januari 2026' },  ]
+    { id: 11, src: '/horizontal-3.jpg', title: 'Pendataan Warga Kampung Lengah Sari', date: '10 September 2025' },  ]
 
   return (
     <ThemeProvider>
@@ -92,7 +90,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="text-2xl font-black tracking-tighter text-[#001E3C] dark:text-white">STEVEN ONE</div>
           <div className="hidden md:flex items-center space-x-8">
-            {['home', 'layanan', 'galeri', 'kontak'].map((item) => (
+            {['home', 'layanan', 'galeri', 'faq', 'kontak'].map((item) => (
               <button 
                 key={item}
                 onClick={() => scrollToSection(item)}
@@ -199,6 +197,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQ />
 
       {/* Footer */}
       <footer id="kontak" className="py-20 bg-slate-200 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700">

@@ -5,7 +5,18 @@ import { Sun, Moon } from 'lucide-react'
 import { useTheme } from '../components/ThemeContext'
 
 export function DarkModeToggle() {
-  const { theme, toggleTheme } = useTheme()
+  const { theme, toggleTheme, mounted } = useTheme()
+
+  // Don't render anything until mounted to prevent hydration mismatch
+  if (!mounted) {
+    return (
+      <div className="w-14 h-8 bg-slate-200 rounded-full p-1">
+        <div className="w-6 h-6 bg-white rounded-full shadow-md flex items-center justify-center">
+          <Sun className="w-4 h-4 text-yellow-500" />
+        </div>
+      </div>
+    )
+  }
 
   return (
     <motion.button
