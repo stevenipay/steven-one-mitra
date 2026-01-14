@@ -32,10 +32,10 @@ export function WhyChooseUs() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-black text-white mb-6">
+          <h2 className="text-3xl md:text-4xl font-black text-slate-950 dark:text-white mb-6">
             Mengapa Memilih Kami?
           </h2>
-          <p className="text-slate-300 text-lg max-w-3xl mx-auto">
+          <p className="text-slate-900 dark:text-slate-300 text-lg max-w-3xl mx-auto">
             Kami hadir sebagai mitra strategis yang memahami kompleksitas dunia kesehatan dan regulasi BPJS
           </p>
         </motion.div>
@@ -53,10 +53,10 @@ export function WhyChooseUs() {
               <div className="w-16 h-16 bg-blue-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-500/20 transition-colors">
                 <feature.icon className="w-8 h-8 text-blue-400 group-hover:text-blue-300 transition-colors" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-blue-300 transition-colors">
+              <h3 className="text-xl font-bold text-slate-950 dark:text-white mb-4 group-hover:text-blue-300 transition-colors">
                 {feature.title}
               </h3>
-              <p className="text-slate-300 leading-relaxed">
+              <p className="text-slate-900 dark:text-slate-300 leading-relaxed">
                 {feature.description}
               </p>
             </motion.div>

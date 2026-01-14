@@ -114,7 +114,7 @@ export default function Home() {
             <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-[#001E3C] dark:text-white">
               Solusi Akurat Peningkatan <span className="text-blue-600 dark:text-blue-400">Kapitasi.</span>
             </h1>
-            <p className="text-xl text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
+            <p className="text-xl text-slate-900 dark:text-slate-300 mb-8 leading-relaxed">
               Membangun kemitraan strategis antara FKTP dengan komunitas masyarakat melalui metode lapangan yang terukur.
             </p>
             <button 
@@ -135,18 +135,18 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
           <div className="p-8 rounded-3xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
             <Users className="w-12 h-12 text-blue-600 dark:text-blue-400 mb-6" />
-            <h3 className="text-xl font-bold mb-4 text-[#001E3C] dark:text-white">Community Partnership</h3>
-            <p className="text-slate-500 dark:text-slate-400 text-sm">Membangun kerjasama formal dengan perangkat lingkungan (RT/RW) untuk pembukaan akses sosialisasi.</p>
+            <h3 className="text-xl font-bold mb-4 text-slate-950 dark:text-white">Community Partnership</h3>
+            <p className="text-slate-900 dark:text-slate-300 text-sm">Membangun kerjasama formal dengan perangkat lingkungan (RT/RW) untuk pembukaan akses sosialisasi.</p>
           </div>
           <div className="p-8 rounded-3xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
             <TrendingUp className="w-12 h-12 text-blue-600 dark:text-blue-400 mb-6" />
-            <h3 className="text-xl font-bold mb-4 text-[#001E3C] dark:text-white">Massive Acquisition</h3>
-            <p className="text-slate-500 dark:text-slate-400 text-sm">Strategi pendataan Door-to-Door yang efektif menjaring peserta baru secara massal dan akurat.</p>
+            <h3 className="text-xl font-bold mb-4 text-slate-950 dark:text-white">Massive Acquisition</h3>
+            <p className="text-slate-900 dark:text-slate-300 text-sm">Strategi pendataan Door-to-Door yang efektif menjaring peserta baru secara massal dan akurat.</p>
           </div>
           <div className="p-8 rounded-3xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
             <Zap className="w-12 h-12 text-blue-600 dark:text-blue-400 mb-6" />
-            <h3 className="text-xl font-bold mb-4 text-[#001E3C] dark:text-white">Digitalisasi JKN</h3>
-            <p className="text-slate-500 dark:text-slate-400 text-sm">Edukasi aktivasi Mobile JKN dan Antrean Online untuk meningkatkan poin performa (KBK) Klinik.</p>
+            <h3 className="text-xl font-bold mb-4 text-slate-950 dark:text-white">Digitalisasi JKN</h3>
+            <p className="text-slate-900 dark:text-slate-300 text-sm">Edukasi aktivasi Mobile JKN dan Antrean Online untuk meningkatkan poin performa (KBK) Klinik.</p>
           </div>
         </div>
       </section>
@@ -163,7 +163,7 @@ export default function Home() {
       {/* Gallery Section - 8 FOTO VERTIKAL + 3 HORIZONTAL */}
       <section id="galeri" className="py-24 bg-white dark:bg-slate-900">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-black text-center mb-12 text-[#001E3C] dark:text-white">Dokumentasi Lapangan</h2>
+          <h2 className="text-3xl font-black text-center mb-12 text-slate-950 dark:text-white">Dokumentasi Lapangan</h2>
           {/* 8 Kartu Vertikal */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {photos.slice(0, 8).map((photo) => (
@@ -216,7 +216,7 @@ export default function Home() {
       {/* Footer */}
       <footer id="kontak" className="py-20 bg-slate-200 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-10 text-[#001E3C] dark:text-white">Informasi Kontak</h2>
+          <h2 className="text-3xl font-bold mb-10 text-slate-950 dark:text-white">Informasi Kontak</h2>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <a href="https://wa.me/6282310690095" className="flex items-center justify-center gap-3 px-8 py-4 bg-blue-600 hover:bg-green-700 dark:bg-blue-500 dark:hover:bg-green-600 text-white rounded-xl font-bold transition-all">
               <Phone className="w-5 h-5" /> 0823-1069-0095
