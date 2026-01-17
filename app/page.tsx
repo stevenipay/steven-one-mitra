@@ -11,7 +11,9 @@ import {
   ArrowRight, 
   Phone, 
   Mail,
-  CheckCircle2
+  CheckCircle2,
+  Menu,
+  X
 } from 'lucide-react'
 
 import { DarkModeToggle } from './components/DarkModeToggle'
@@ -58,6 +60,13 @@ const Counter = ({ target, label, suffix }: { target: number, label: string, suf
 }
 
 export default function Home() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  // Reset scroll ke atas saat page dimuat
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   // Fungsi Scroll Navigasi yang diperbaiki
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id)
@@ -92,6 +101,9 @@ export default function Home() {
       <nav className="fixed top-0 w-full z-[100] bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-100 dark:border-slate-700">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="text-2xl font-black tracking-tighter text-[#001E3C] dark:text-white">STEVEN ONE</div>
+          <div className="md:hidden flex items-center space-x-4">
+            <DarkModeToggle />
+          </div>
           <div className="hidden md:flex items-center space-x-8">
             {['home', 'layanan', 'galeri', 'faq', 'profil', 'kontak'].map((item) => (
               <button 
@@ -105,6 +117,9 @@ export default function Home() {
             <DarkModeToggle />
           </div>
         </div>
+        {mobileMenuOpen && (
+          <></>
+        )}
       </nav>
 
       {/* Hero Section */}
@@ -114,7 +129,7 @@ export default function Home() {
             <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-[#001E3C] dark:text-white">
               Solusi Akurat Peningkatan <span className="text-blue-600 dark:text-blue-400">Kapitasi.</span>
             </h1>
-            <p className="text-xl text-slate-900 dark:text-slate-300 mb-8 leading-relaxed">
+            <p className="text-xl text-slate-800 dark:text-slate-200 mb-8 leading-relaxed font-medium">
               Membangun kemitraan strategis antara FKTP dengan komunitas masyarakat melalui metode lapangan yang terukur.
             </p>
             <button 

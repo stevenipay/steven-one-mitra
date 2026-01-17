@@ -100,15 +100,15 @@ export function ConsultantProfile() {
               </p>
             </div>
 
-            <div className="space-y-4 text-slate-900 dark:text-slate-300 leading-relaxed">
+            <div className="space-y-4 text-slate-800 dark:text-slate-200 leading-relaxed">
               <p>
                 Steven One adalah seorang Strategic Partnership Consultant yang memiliki keahlian mendalam di bidang administrasi jaminan kesehatan. Dengan pemahaman komprehensif mengenai ekosistem JKN dan strategi akuisisi lapangan, Steven berfokus membantu FKTP mencapai pertumbuhan kapitasi yang sehat, stabil, dan berkelanjutan melalui pendekatan digitalisasi layanan.
               </p>
 
               <div className="grid grid-cols-2 gap-4 pt-4">
                 <div className="space-y-2">
-                  <h4 className="text-slate-950 dark:text-white font-semibold">Keahlian Utama:</h4>
-                  <ul className="text-sm space-y-1 text-slate-900 dark:text-slate-300">
+                  <h4 className="text-slate-950 dark:text-white font-bold text-base">Keahlian Utama:</h4>
+                  <ul className="text-sm space-y-1 text-slate-800 dark:text-white">
                     <li>• Administrasi JKN</li>
                     <li>• Strategi Akuisisi Lapangan</li>
                     <li>• Digitalisasi Layanan</li>
@@ -116,8 +116,8 @@ export function ConsultantProfile() {
                 </div>
 
                 <div className="space-y-2">
-                  <h4 className="text-slate-950 dark:text-white font-semibold">Fokus Layanan:</h4>
-                  <ul className="text-sm space-y-1 text-slate-900 dark:text-slate-300\">"
+                  <h4 className="text-slate-950 dark:text-white font-bold text-base">Fokus Layanan:</h4>
+                  <ul className="text-sm space-y-1 text-slate-800 dark:text-white">
                     <li>• Pertumbuhan Kapitasi</li>
                     <li>• Edukasi Mobile JKN</li>
                     <li>• Community Partnership</li>

@@ -37,7 +37,7 @@ export function FAQ() {
   }
 
   return (
-    <section className="py-24 bg-slate-900/80 backdrop-blur-sm">
+    <section className="py-24 bg-blue-600/80 backdrop-blur-sm">
       <div className="max-w-4xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -48,9 +48,9 @@ export function FAQ() {
         >
           <div className="flex items-center justify-center gap-3 mb-6">
             <HelpCircle className="w-8 h-8 text-blue-400" />
-            <h2 className="text-3xl md:text-4xl font-black text-slate-950 dark:text-white">Pertanyaan Umum</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-white dark:text-white">Pertanyaan Umum</h2>
           </div>
-          <p className="text-slate-900 dark:text-slate-300 text-lg max-w-2xl mx-auto">
+          <p className="text-slate-200 dark:text-slate-100 text-lg max-w-2xl mx-auto">
             Jawaban atas pertanyaan yang sering ditanyakan oleh pemilik klinik mengenai layanan kami
           </p>
         </motion.div>
@@ -69,7 +69,7 @@ export function FAQ() {
                 onClick={() => toggleAccordion(index)}
                 className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-slate-700/30 transition-colors group"
               >
-                <span className="text-slate-950 dark:text-white font-bold text-lg group-hover:text-blue-400 transition-colors">
+                <span className="text-white font-bold text-lg group-hover:text-blue-300 transition-colors">
                   {item.question}
                 </span>
                 <motion.div
@@ -90,7 +90,7 @@ export function FAQ() {
                     className="overflow-hidden"
                   >
                     <div className="px-8 pb-6">
-                      <p className="text-slate-900 dark:text-slate-300 leading-relaxed">
+                      <p className="text-slate-200 dark:text-slate-100 leading-relaxed">
                         {item.answer}
                       </p>
                     </div>

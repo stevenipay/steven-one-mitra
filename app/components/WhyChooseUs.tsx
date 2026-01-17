@@ -23,7 +23,7 @@ export function WhyChooseUs() {
   ]
 
   return (
-    <section className="py-24 bg-slate-900/50 backdrop-blur-sm">
+    <section className="py-24 bg-white dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -35,7 +35,7 @@ export function WhyChooseUs() {
           <h2 className="text-3xl md:text-4xl font-black text-slate-950 dark:text-white mb-6">
             Mengapa Memilih Kami?
           </h2>
-          <p className="text-slate-900 dark:text-slate-300 text-lg max-w-3xl mx-auto">
+          <p className="text-slate-700 dark:text-slate-300 text-lg max-w-3xl mx-auto">
             Kami hadir sebagai mitra strategis yang memahami kompleksitas dunia kesehatan dan regulasi BPJS
           </p>
         </motion.div>
@@ -48,15 +48,15 @@ export function WhyChooseUs() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="bg-slate-800/50 backdrop-blur-sm p-8 rounded-2xl border border-slate-700 hover:border-blue-500/30 transition-all duration-300 group"
+              className="p-8 rounded-3xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:shadow-lg dark:hover:border-blue-500/30 transition-all duration-300 group"
             >
-              <div className="w-16 h-16 bg-blue-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-500/20 transition-colors">
-                <feature.icon className="w-8 h-8 text-blue-400 group-hover:text-blue-300 transition-colors" />
+              <div className="w-16 h-16 bg-blue-100 dark:bg-blue-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-200 dark:group-hover:bg-blue-500/20 transition-colors">
+                <feature.icon className="w-8 h-8 text-blue-600 dark:text-blue-400 group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors" />
               </div>
-              <h3 className="text-xl font-bold text-slate-950 dark:text-white mb-4 group-hover:text-blue-300 transition-colors">
+              <h3 className="text-xl font-bold text-slate-950 dark:text-white mb-4 group-hover:text-blue-600 dark:group-hover:text-blue-300 transition-colors">
                 {feature.title}
               </h3>
-              <p className="text-slate-900 dark:text-slate-300 leading-relaxed">
+              <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm">
                 {feature.description}
               </p>
             </motion.div>
