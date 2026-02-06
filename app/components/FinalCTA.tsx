@@ -50,7 +50,7 @@ export function FinalCTA() {
 
             <div className="text-white flex items-center gap-2">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-              <span className="text-sm">Responsif dalam 1 jam</span>
+              <span className="text-sm">Fast Response</span>
             </div>
           </motion.div>
 

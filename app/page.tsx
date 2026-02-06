@@ -82,7 +82,7 @@ export default function Home() {
 
   // Data 8 Foto Lengkap (Termasuk sosialisasi-8.jpg)
   const photos = [
-    { id: 1, src: '/sosialisasi-1.jpg', title: 'Perizinan Desa dan RT/RW', date: '15 Oktober 2025' },
+    { id: 1, src: '/sosialisasi-1.jpg', title: 'Sosialisasi & Edukasi Warga Kampung Cijingga', date: '25 Januari 2026' },
     { id: 2, src: '/sosialisasi-2.jpg', title: 'Pendataan Warga Kampung Lengah Sari', date: '10 September 2025' },
     { id: 3, src: '/sosialisasi-3.jpg', title: 'Edukasi Mobile JKN', date: '16 Juli 2025' },
     { id: 4, src: '/sosialisasi-4.jpg', title: 'Sosialisasi Acara Ibu-ibu Arisan', date: '7 September 2025' },
